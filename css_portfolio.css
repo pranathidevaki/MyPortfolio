@@ -1,67 +1,121 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #fffdfc;
-    color: #333;
+/* Global Styles */
+* {
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Softer, modern font */
 }
 
-header {
-    background-color: #fbe8e7;
+/* Body */
+body {
+    background-color: #f3f9fc; /* Soft pastel blue background */
+    color: #333; /* Dark gray text for readability */
+    line-height: 1.6;
+    font-family: 'Lora', serif; /* Softer font for body */
     padding: 20px;
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #a2c8e1; /* Pastel blue background */
+    padding: 10px 0;
     text-align: center;
-    border-bottom: 2px solid #f9c5c5;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
+header {
+    background-color: #a2c8e1; /* Pastel blue background */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 2.5em;
-    color: #cc5c6c;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
 }
 
 header p {
-    font-size: 1.2em;
-    color: #555;
+    font-size: 1.2rem;
+    font-family: 'Lora', serif;
 }
 
+/* Section Styles */
 section {
     padding: 20px;
-    max-width: 900px;
-    margin: auto;
+    margin: 20px 0;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
-    color: #a64b5d;
-    border-bottom: 2px dashed #f3c4c4;
-    padding-bottom: 5px;
-}
-
-ul {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-
-.image-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* made each column smaller */
-    gap: 12px;
-    margin-top: 10px;
-}
-
-img {
-    width: 100%;
-    height: auto;
-    max-width: 200px; /* keeps them cuter and smaller */
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    margin: auto;
-    display: block;
-}
-
+/* Footer */
 footer {
+    background-color: #a2c8e1; /* Pastel blue */
+    color: white;
     text-align: center;
-    padding: 15px;
-    background-color: #fbe8e7;
-    border-top: 2px solid #f9c5c5;
+    padding: 10px 0;
+    margin-top: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Links */
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Image Gallery for Extracurriculars */
+.image-gallery {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.image-gallery img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect for Images */
+.image-gallery img:hover {
+    transform: scale(1.1);
+    border: 2px solid #a2c8e1; /* Pastel blue border on hover */
+}
+
+/* Smooth Scroll Effect */
+html {
+    scroll-behavior: smooth;
 }
